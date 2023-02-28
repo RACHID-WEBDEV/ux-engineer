@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  @apply bg-bg;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply dark:text-gray-800 dark:font-bold font-Poppins;
+}
+p {
+  @apply text-gray-300 dark:text-gray-600 font-Poppins;
+}
+
+img,
+video {
+  /* max-width: 100%; */
+  @apply max-w-min;
+}
+.about-shape-animate {
+  animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* FormClasses */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* @apply bg-bg !text-gray-100; */
+  -webkit-box-shadow: 0 0 0 30px #0f172a inset !important;
+  -webkit-text-fill-color: #fff;
+}
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f9fafb inset !important;
+  -webkit-text-fill-color: #616a7a;
+}
+.placeHolderClassName {
+  @apply border-gray-300 bg-bg  placeholder:text-gray-600 text-gray-700;
+}
+.errorClassName {
+  @apply border-red-500 focus:border-red-200 focus:ring-red-200;
+}
+
+.successClassName {
+  @apply border-green-500 focus:border-green-200 focus:ring-green-200;
+}
+
+.focusClassName {
+  @apply focus:border-gray-200 focus:ring-gray-200;
+}
+.custom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background: blue;
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff2;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .landingSectionTitle::before {
+    left: 50%;
+    right: auto;
+    top: -20px;
+    transform: translate(-50%, -50%);
+    height: 8px;
+    width: 150px;
+    @apply bg-bg;
+  }
+}
+
+@keyframes scaleDownIn {
+  from {
+    opacity: 0;
+    transform: scale(4) translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
