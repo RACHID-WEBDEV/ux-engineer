@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import FoodCart from '@/components/FoodCart';
 import NavBar from '@/components/NavBar';
@@ -44,10 +43,10 @@ const UiEngineerTest = () => {
           <div className=" ">
             <div className="nav-container p-6 ">
               <div className="nav-icon flex items-center justify-around">
-                <img src="https://img.icons8.com/metro/26/DAA70C/cutlery.png" alt="footer icon" />
-                <img src="https://img.icons8.com/metro/26/979C9E/shop.png" />
+                <img src="https://img.icons8.com/metro/26/DAA70C/cutlery.png" alt="footer menu icon" />
+                <img src="https://img.icons8.com/metro/26/979C9E/shop.png" alt="footer menu icon" />
                 {/* <img src="https://img.icons8.com/ios-filled/50/979C9E/checklist--v1.png" alt="footer menu" /> */}
-                <img src="https://img.icons8.com/metro/26/979C9E/checklist.png" alt="footer menu" />
+                <img src="https://img.icons8.com/metro/26/979C9E/checklist.png" alt="footer menu icon" />
               </div>
 
               <div className="mobile_dock_bar" />
