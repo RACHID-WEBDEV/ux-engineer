@@ -3,8 +3,8 @@ import FoodCart from '@/components/FoodCart';
 import NavBar from '@/components/NavBar';
 import SearchInput from '@/components/SearchInput';
 import Slider from '@/components/Slider';
+import foodData from '@/data/foodData';
 import React from 'react';
-import foodData from './data/foodData';
 
 const UiEngineerTest = () => {
   return (
